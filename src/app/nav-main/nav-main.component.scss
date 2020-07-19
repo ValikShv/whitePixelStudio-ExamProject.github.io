@@ -1,0 +1,18 @@
+.wraper{
+  margin-top: 1%;
+  width: 100%;
+  height: 10%;
+  background: linear-gradient(180deg, #D1B071 0%, #D1B071 0%, #D1B071 0.01%,
+              rgba(220, 220, 219, 0.37) 46.88%,
+              rgba(213, 205, 190, 0.922353) 59.38%,
+              rgba(191, 159, 96, 0.67) 100%);
+  display: flex;
+  justify-content: space-around;
+};
+a{
+  text-decoration:none;
+  color: black;
+};
+a:focus{
+  color: white;
+};

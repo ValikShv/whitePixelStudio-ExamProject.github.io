@@ -1,0 +1,25 @@
+<div class="wraper" *ngIf="!loggedIn; else loggedOut">
+  <div class="elem">
+    <span>Login</span>
+  <input type="text">
+  </div>
+  <div class="elem">
+    <span>Password</span>
+  <input type="password">
+  </div>
+  <div class="elem">
+  <button id="singIn">Sing in</button>
+  <button id="singUp">Sing up</button>
+  </div>
+</div>
+<ng-template #loggedOut>
+  <div class="wraper">
+    <span class="material-icons icon">account_box</span>
+    <ul>
+      <!-- <li *ngfor="let item of user | keyvalue">{{item.key}}:{{item.value}}</li> -->
+      <li>{{user.name}}</li>
+      <li>{{user.status}}</li>
+    </ul>
+
+  </div>
+</ng-template>
